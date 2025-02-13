@@ -169,5 +169,12 @@
     }
   },
   "additionalProperties": false,
-  "required": ["schema_version", "survey_id", "identifier", "supplier_number", "current_month", "items"]
+  "required": [
+    "schema_version",
+    "survey_id",
+    "identifier",
+    "supplier_number",
+    "current_month",
+    "items"
+  ]
 }
