@@ -43,6 +43,7 @@ Documentation can be found in [docs/](./docs).
 - [Sand and Gravel README](docs/sand_and_gravel)
 - [BRES README](docs/bres.md)
 - [BRS README](docs/brs.md)
+- [PPI README](docs/ppi.md)
 - [JSON Schema Definitions](schemas)
 - [JSON Examples (Unit Data)](examples)
 
