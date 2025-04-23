@@ -7,7 +7,7 @@
   "items": {
     "item": [
       {
-        "identifier": "12345678901",
+        "identifier": "1234567890",
         "supplier_number": "12345678901",
         "item_number": "1234567890",
         "item_specification_1": "PRODUCT: HEAT EXCHANGER AIR-AIR",
@@ -23,7 +23,7 @@
         "currency": "POUND STERLING"
       },
       {
-        "identifier": "98765432101",
+        "identifier": "9876543210",
         "supplier_number": "98765432101",
         "item_number": "9876543210",
         "item_specification_1": "PRODUCT: HEAT EXCHANGER WATER-WATER",

@@ -15,7 +15,7 @@
     },
     "identifier": {
       "type": "string",
-      "description": "The unique top-level identifier. This is the reporting unit reference without the check letter appended.",
+      "description": "This should be a unique item identifier. For PPI this would be the product item number.",
       "minLength": 11,
       "maxLength": 11,
       "pattern": "^[a-zA-Z0-9]+$",
