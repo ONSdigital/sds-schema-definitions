@@ -4,7 +4,7 @@ This document describes the schema for the PPI survey.
 
 ## Schema
 
-Schema: [v2.json](/schemas/ppi/v2.json)
+Schema: [v3.json](/schemas/ppi/v3.json)
 
 **The table below only describes data that is survey specific. The generic structure of supplementary data is documented in [README.md](/docs/README.md)**
 
