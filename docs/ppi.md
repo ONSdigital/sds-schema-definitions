@@ -4,7 +4,7 @@ This document describes the schema for the PPI survey.
 
 ## Schema
 
-Schema: [v2.json](/schemas/ppi/v2.json)
+Schema: [v3.json](/schemas/ppi/v3.json)
 
 **The table below only describes data that is survey specific. The generic structure of supplementary data is documented in [README.md](/docs/README.md)**
 
@@ -15,7 +15,7 @@ Schema: [v2.json](/schemas/ppi/v2.json)
 | `current_month`                       | The month and year that the data is required for.                                                                                                                                                | Yes       |
 | `items`                               | An object of items provided.                                                                                                                                                                     | Yes       |
 | `items.item[]`                        | The data about each item.                                                                                                                                                                        | Yes       |
-| `items.item[].identifier`             | The unique top-level identifier. For business surveys this is the reporting unit reference without the check letter appended.                                                                    | Yes       |
+| `items.item[].identifier`             | The 10 digit unique reference for each item produced by the business. This number is allocated by ONS, if the item was to change the number would stay the same.                                 | Yes       |
 | `items.item[].supplier_number`        | Like ruref, this is also a unique top-level identifier for the business.                                                                                                                         | Yes       |
 | `items.item[].item_number`            | The 10 digit unique reference for each item produced by the business. This number is allocated by ONS, if the item was to change the number would stay the same.                                 | Yes       |
 | `items.item[].item_specification_1`   | A separate field of the specification for the item produced by the business, the contents and order of this field can change dependent on the number of characters. This line is always PRODUCT. | Yes       |
