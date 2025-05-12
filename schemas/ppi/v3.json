@@ -84,28 +84,24 @@
               "item_specification_2": {
                 "type": "string",
                 "description": "A separate field of the specification for the item produced by the business, the contents and order of this field can change dependent on the number of characters.",
-                "minLength": 1,
                 "maxLength": 40,
                 "examples": ["DESCRIPTION: REFRIGERATION AND FREEZING"]
               },
               "item_specification_3": {
                 "type": "string",
                 "description": "A separate field of the specification for the item produced by the business, the contents and order of this field can change dependent on the number of characters.",
-                "minLength": 1,
                 "maxLength": 40,
                 "examples": ["EQUIPMENT AND HEAT PUMPS: EXCEPT"]
               },
               "item_specification_4": {
                 "type": "string",
                 "description": "A separate field of the specification for the item produced by the business, the contents and order of this field can change dependent on the number of characters.",
-                "minLength": 1,
                 "maxLength": 40,
                 "examples": ["HOUSEHOLD TYPE EQUIPMENT"]
               },
               "item_specification_5": {
                 "type": "string",
                 "description": "A separate field of the specification for the item produced by the business, the contents and order of this field can change dependent on the number of characters.",
-                "minLength": 1,
                 "maxLength": 40,
                 "examples": ["SERIAL NO: 8585C000-001"]
               },
@@ -126,21 +122,18 @@
               "terms_of_sale_2": {
                 "type": "string",
                 "description": "A separate field of the terms of sale for the item produced by the business, the contents and order of this field can change dependent on the number of characters.",
-                "minLength": 1,
                 "maxLength": 40,
                 "examples": ["PAYMENT: 60 DAYS NET"]
               },
               "terms_of_sale_3": {
                 "type": "string",
                 "description": "A separate field of the terms of sale for the item produced by the business, the contents and order of this field can change dependent on the number of characters.",
-                "minLength": 1,
                 "maxLength": 40,
                 "examples": ["CARRIAGE: FCA"]
               },
               "terms_of_sale_4": {
                 "type": "string",
                 "description": "A separate field of the terms of sale for the item produced by the business, the contents and order of this field can change dependent on the number of characters.",
-                "minLength": 1,
                 "maxLength": 40,
                 "examples": ["TERM: EX WORKS"]
               },

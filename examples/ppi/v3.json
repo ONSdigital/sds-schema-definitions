@@ -13,7 +13,7 @@
         "item_specification_1": "PRODUCT: HEAT EXCHANGER AIR-AIR",
         "item_specification_2": "DESCRIPTION: REFRIGERATION AND FREEZING",
         "item_specification_3": "EQUIPMENT AND HEAT PUMPS: EXCEPT",
-        "item_specification_4": "HOUSEHOLD TYPE EQUIPMENT",
+        "item_specification_4": "",
         "item_specification_5": "SERIAL NO: 8585C000-001",
         "unit_of_sale": "EACH",
         "terms_of_sale_1": "SUPPLIER REF: 123073",
@@ -34,7 +34,7 @@
         "unit_of_sale": "EACH",
         "terms_of_sale_1": "SUPPLIER REF: 987654",
         "terms_of_sale_2": "PAYMENT: 30 DAYS NET",
-        "terms_of_sale_3": "CARRIAGE: DDP",
+        "terms_of_sale_3": "",
         "terms_of_sale_4": "TERM: FOB",
         "currency": "EURO"
       }
