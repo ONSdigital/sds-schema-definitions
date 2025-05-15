@@ -41,6 +41,7 @@ const schemaDefinitionJsonToExamples = {
   "schemas/bres/v2.json": "examples/bres/v2.json",
   "schemas/brs/v2.json": "examples/brs/v2.json",
   "schemas/ppi/v2.json": "examples/ppi/v2.json",
+  "schemas/ppi/v3.json": "examples/ppi/v3.json",
 };
 
 // Recursive function for validating examples against their respective schemas
