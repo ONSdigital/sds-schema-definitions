@@ -33,7 +33,7 @@
         "service_description_5": "PRICE PER HOUR",
         "unit_of_sale": "PRICE PER HOUR",
         "terms_of_sale_1": "CUSTOMER REF: ACME123",
-        "terms_of_sale_2": "PAYMENT: 50% UPFRONT, BALANCE ON DELIVERY",
+        "terms_of_sale_2": "PAYMENT: 50% UPFRONT, BALANCE",
         "terms_of_sale_3": "PAYMENT 14 DAYS AFTER COMPLETION",
         "terms_of_sale_4": "NO CREDIT ACCOUNT",
         "currency": "Pound Sterling",
