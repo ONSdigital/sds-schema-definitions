@@ -1,0 +1,175 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SPPI Survey SDS Schema",
+  "description": "Schema for the SPPI survey.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "v2",
+      "description": "Version of the schema spec"
+    },
+    "survey_id": {
+      "type": "string",
+      "description": "The identifier for a particular survey",
+      "enum": ["061"]
+    },
+    "identifier": {
+      "type": "string",
+      "description": "The unique top-level identifier. For business surveys this is the reporting unit reference without the check letter appended.",
+      "minLength": 11,
+      "maxLength": 11,
+      "examples": ["34942807969"]
+    },
+    "supplier_number": {
+      "type": "string",
+      "description": "Like ruref, this is also a unique top-level identifier for the business.",
+      "minLength": 1,
+      "maxLength": 11,
+      "pattern": "^[a-zA-Z0-9]+$",
+      "examples": ["34942807969"]
+    },
+    "source_quarter": {
+      "type": "string",
+      "description": "The quarter that business are asked to report for.",
+      "minLength": 21,
+      "maxLength": 24,
+      "pattern": "^Quarter \\d/\\d{4} \\([A-Za-z]+\\)$",
+      "examples": ["Quarter 1/2024 (January)"]
+    },
+    "items": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9][a-z0-9\\-]*[a-z0-9]$"
+      },
+      "properties": {
+        "service": {
+          "type": "array",
+          "description": "The data about each service.",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "identifier": {
+                "type": "string",
+                "description": "The 10 digit unique reference for each service produced by the business. This number is allocated by ONS, if the service was to change the number would stay the same.",
+                "minLength": 10,
+                "maxLength": 10,
+                "examples": ["3494280796"]
+              },
+              "item_number": {
+                "type": "string",
+                "description": "The 10 digit unique reference for each service produced by the business. This number is allocated by ONS, if the service was to change the number would stay the same.",
+                "minLength": 10,
+                "maxLength": 10,
+                "examples": ["3494280796"]
+              },
+              "service_description_1": {
+                "type": "string",
+                "description": "A separate field of the specification for the service produced by the business, the contents and order of this field can change dependent on the number of characters. This line is always PRODUCT.",
+                "minLength": 1,
+                "maxLength": 75,
+                "examples": ["COMMERCIAL WASTE - LANDFILL - COLLECTION"]
+              },
+              "service_description_2": {
+                "type": "string",
+                "description": "A separate field of the specification for the service produced by the business, the contents and order of this field can change dependent on the number of characters.",
+                "maxLength": 75,
+                "examples": ["AND DISPOSAL - FROM FACTORIES & WORK"]
+              },
+              "service_description_3": {
+                "type": "string",
+                "description": "A separate field of the specification for the service produced by the business, the contents and order of this field can change dependent on the number of characters.",
+                "maxLength": 75,
+                "examples": ["(FROM CONTAINER BERTH TO INLAND)"]
+              },
+              "service_description_4": {
+                "type": "string",
+                "description": "A separate field of the specification for the service produced by the business, the contents and order of this field can change dependent on the number of characters.",
+                "maxLength": 75,
+                "examples": ["CUSTOMER: BRIN YT"]
+              },
+              "service_description_5": {
+                "type": "string",
+                "description": "A separate field of the specification for the service produced by the business, the contents and order of this field can change dependent on the number of characters.",
+                "maxLength": 75,
+                "examples": ["PRICE PER TONNE"]
+              },
+              "unit_of_sale": {
+                "type": "string",
+                "description": "The unit of sale for the service produced by the business.",
+                "maxLength": 40,
+                "examples": ["PRICE PER MILE"]
+              },
+              "terms_of_sale_1": {
+                "type": "string",
+                "description": "A separate field of the terms of sale for the service produced by the business, the contents and order of this field can change dependent on the number of characters.",
+                "maxLength": 40,
+                "examples": ["CUSTOMER REF: UK CUSTOMER"]
+              },
+              "terms_of_sale_2": {
+                "type": "string",
+                "description": "A separate field of the terms of sale for the service produced by the business, the contents and order of this field can change dependent on the number of characters.",
+                "maxLength": 40,
+                "examples": ["PAYMENT: 25% DEPOSIT UP FRONT & FINAL"]
+              },
+              "terms_of_sale_3": {
+                "type": "string",
+                "description": "A separate field of the terms of sale for the service produced by the business, the contents and order of this field can change dependent on the number of characters.",
+                "maxLength": 40,
+                "examples": ["PAYMENT 28 DAYS PRIOR OR 21 DAYS IF"]
+              },
+              "terms_of_sale_4": {
+                "type": "string",
+                "description": "A separate field of the terms of sale for the service produced by the business, the contents and order of this field can change dependent on the number of characters.",
+                "maxLength": 40,
+                "examples": ["CREDIT ACCOUNT"]
+              },
+              "currency": {
+                "type": "string",
+                "description": "The currency for the service delivered.",
+                "minLength": 1,
+                "maxLength": 25,
+                "examples": ["Pound Sterling"]
+              },
+              "currency_wording": {
+                "type": "string",
+                "description": "The question wording associated with the currency for the service delivered.",
+                "minLength": 5,
+                "maxLength": 14,
+                "examples": ["price"]
+              },
+              "currency_wording_capital": {
+                "type": "string",
+                "description": "The question wording associated with the currency for the service delivered. With capital letter.",
+                "minLength": 5,
+                "maxLength": 14,
+                "examples": ["Price"]
+              }
+            },
+            "required": [
+              "identifier",
+              "item_number",
+              "service_description_1",
+              "currency",
+              "currency_wording",
+              "currency_wording_capital"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": ["service"]
+    }
+  },
+ "required": [
+    "schema_version",
+    "survey_id",
+    "identifier",
+    "supplier_number",
+    "source_quarter",
+    "items"
+  ],
+  "additionalProperties": false
+}
