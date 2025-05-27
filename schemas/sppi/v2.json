@@ -163,7 +163,7 @@
       "required": ["service"]
     }
   },
- "required": [
+  "required": [
     "schema_version",
     "survey_id",
     "identifier",
