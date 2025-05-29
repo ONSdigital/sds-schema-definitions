@@ -7,8 +7,8 @@
   "items": {
     "service": [
       {
-        "identifier": "1234567890",
-        "item_number": "1234567890",
+        "identifier": "8122013058",
+        "item_number": "8122013058",
         "service_description_1": "COMMERCIAL WASTE - LANDFILL - COLLECTION",
         "service_description_2": "AND DISPOSAL - FROM FACTORIES & WORK",
         "service_description_3": "(FROM CONTAINER BERTH TO INLAND)",
@@ -19,7 +19,7 @@
         "terms_of_sale_2": "PAYMENT: 25% DEPOSIT UP FRONT & FINAL",
         "terms_of_sale_3": "PAYMENT 28 DAYS PRIOR OR 21 DAYS IF",
         "terms_of_sale_4": "CREDIT ACCOUNT",
-        "currency": "Pound Sterling",
+        "currency": "Pounds Sterling",
         "currency_wording": "price",
         "currency_wording_capital": "Price"
       },
@@ -36,7 +36,7 @@
         "terms_of_sale_2": "PAYMENT: 50% UPFRONT, BALANCE",
         "terms_of_sale_3": "PAYMENT 14 DAYS AFTER COMPLETION",
         "terms_of_sale_4": "NO CREDIT ACCOUNT",
-        "currency": "Pound Sterling",
+        "currency": "Pounds Sterling",
         "currency_wording": "price",
         "currency_wording_capital": "Price"
       }

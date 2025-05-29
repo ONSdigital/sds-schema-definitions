@@ -55,14 +55,14 @@
                 "description": "The 10 digit unique reference for each service produced by the business. This number is allocated by ONS, if the service was to change the number would stay the same.",
                 "minLength": 10,
                 "maxLength": 10,
-                "examples": ["3494280796"]
+                "examples": ["8122013058"]
               },
               "item_number": {
                 "type": "string",
                 "description": "The 10 digit unique reference for each service produced by the business. This number is allocated by ONS, if the service was to change the number would stay the same.",
                 "minLength": 10,
                 "maxLength": 10,
-                "examples": ["3494280796"]
+                "examples": ["8122013058"]
               },
               "service_description_1": {
                 "type": "string",
@@ -130,7 +130,7 @@
                 "description": "The currency for the service delivered.",
                 "minLength": 1,
                 "maxLength": 25,
-                "examples": ["Pound Sterling"]
+                "examples": ["Pounds Sterling"]
               },
               "currency_wording": {
                 "type": "string",
