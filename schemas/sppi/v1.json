@@ -1,11 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1.json",
   "title": "SPPI Survey SDS Schema",
   "description": "Schema for the SPPI survey.",
   "type": "object",
   "properties": {
     "schema_version": {
-      "const": "v2",
+      "const": "v1",
       "description": "Version of the schema spec"
     },
     "survey_id": {

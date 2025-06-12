@@ -4,7 +4,7 @@ This document describes the schema for the SPPI survey.
 
 ## Schema
 
-Schema: [v2.json](/schemas/sppi/v2.json)
+Schema: [v1.json](/schemas/sppi/v1.json)
 
 **The table below only describes data that is survey specific. The generic structure of supplementary data is documented in [README.md](/docs/README.md)**
 
