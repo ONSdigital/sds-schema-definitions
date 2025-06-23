@@ -19,7 +19,7 @@
       "description": "The unique top-level identifier. For business surveys this is the reporting unit reference without the check letter appended.",
       "minLength": 11,
       "maxLength": 11,
-      "examples": ["34942807969"]
+      "examples": ["12345678901"]
     },
     "supplier_number": {
       "type": "string",
@@ -56,14 +56,14 @@
                 "description": "The 10 digit unique reference for each service produced by the business. This number is allocated by ONS, if the service was to change the number would stay the same.",
                 "minLength": 10,
                 "maxLength": 10,
-                "examples": ["12345678901"]
+                "examples": ["8122013058"]
               },
               "item_number": {
                 "type": "string",
                 "description": "The 10 digit unique reference for each service produced by the business. This number is allocated by ONS, if the service was to change the number would stay the same.",
                 "minLength": 10,
                 "maxLength": 10,
-                "examples": ["12345678901"]
+                "examples": ["8122013058"]
               },
               "service_description_1": {
                 "type": "string",
