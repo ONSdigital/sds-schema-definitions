@@ -16,7 +16,7 @@
     },
     "identifier": {
       "type": "string",
-      "description": "The unique top-level identifier. For business surveys this is the reporting unit reference without the check letter appended. RUREFS are changed to start with 0 and 1 for EPI",
+      "description": "The unique top-level identifier. For business surveys this is the reporting unit reference without the check letter appended. If the first digit of a RU number is a 4 and the REF is changed to a 0 and if the first digit of the RU is a 5 the REF is changed to a 1. Keep the leading zeros",
       "minLength": 11,
       "maxLength": 11,
       "pattern": "^[a-zA-Z0-9]+$",
