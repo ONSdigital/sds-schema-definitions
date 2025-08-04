@@ -23,7 +23,7 @@
     "supplier_number": {
       "type": "string",
       "description": "Like ruref, this is also a unique top-level identifier fo the business. The Supplier ID is essentially the RU number but the first digit is changed for  IPI. If the first digit is a 4 it is changed to a 2 and if the first digit of the is a 5 it is changed to a 3",
-      "minLength": 1,
+      "minLength": 11,
       "maxLength": 11,
       "pattern": "^[a-zA-Z0-9]+$",
       "examples": ["34942807969"]
@@ -98,7 +98,7 @@
               },
               "unit_of_sale": {
                 "type": "string",
-                "description": "The unit of sale for the item produced bu the business.",
+                "description": "The unit of sale for the item produced by the business.",
                 "minLength": 1,
                 "maxLength": 40,
                 "examples": ["EACH"]
@@ -130,10 +130,10 @@
               },
               "currency": {
                 "type": "string",
-                "description": "The currency which the product price is recorded in.",
+                "description": "The currency for the item.",
                 "minLength": 1,
                 "maxLength": 25,
-                "examples": ["POUND STERLING"]
+                "examples": ["POUNDS STERLING"]
               },
               "country_of_origin": {
                 "type": "string",
