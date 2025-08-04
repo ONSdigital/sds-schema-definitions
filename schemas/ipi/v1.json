@@ -15,14 +15,14 @@
     },
     "identifier": {
       "type": "string",
-      "description": "The unique top-level identifier. This is the reporting unit reference without the check letter appended.",
+      "description": "The unique top-level identifier. For business surveys this is the reporting unit reference without the check letter appended. In the final sel file, the RU REF is changed, If the first digit of an RU number is a 4 is the ref is changed to a 2 and if the first digit of the RU is a 5 the ref is changed to a 3",
       "minLength": 11,
       "pattern": "^[a-zA-Z0-9]+$",
       "examples": ["34942807969"]
     },
     "supplier_number": {
       "type": "string",
-      "description": "Like ruref, this is also a unique top-level identifier fo the business. The Supplier ID is essentially the RU number but the first digit is changed for  IPI. If the first digit of an RU number is a 4 is the supplier ID is changed to a 2 and if the first digit of the RU is a 5 the supplier ID is changed to a 3.",
+      "description": "Like ruref, this is also a unique top-level identifier fo the business. The Supplier ID is essentially the RU number but the first digit is changed for  IPI. If the first digit is a 4 it is changed to a 2 and if the first digit of the is a 5 it is changed to a 3",
       "minLength": 1,
       "maxLength": 11,
       "pattern": "^[a-zA-Z0-9]+$",
