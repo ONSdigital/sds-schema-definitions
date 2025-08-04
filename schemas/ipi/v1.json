@@ -55,7 +55,7 @@
                 "minLength": 10,
                 "maxLength": 10,
                 "description": "The 10 digit unique reference for each item produced by the business. This number is allocated by ONS, if the item was to change the number would stay the same.",
-                "examples": ["34942807969"]
+                "examples": ["3494280796"]
               },
               "item_number": {
                 "type": "string",
@@ -125,7 +125,8 @@
               "terms_of_sale_4": {
                 "type": "string",
                 "description": "A separate field of the terms of sale for the item produced by the business, the contents and order of this field can change dependent on the number of characters.",
-                "maxLength": 40
+                "maxLength": 40,
+                "examples": ["CARRIAGE: FCA"]
               },
               "currency": {
                 "type": "string",
