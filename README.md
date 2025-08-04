@@ -44,6 +44,7 @@ Documentation can be found in [docs/](./docs).
 - [BRES README](docs/bres.md)
 - [BRS README](docs/brs.md)
 - [PPI README](docs/ppi.md)
+- [IPI README](docs/ipi.md)
 - [SPPI README](docs/sppi.md)
 - [JSON Schema Definitions](schemas)
 - [JSON Examples (Unit Data)](examples)
