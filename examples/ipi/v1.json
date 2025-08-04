@@ -2,14 +2,13 @@
   "schema_version": "v1",
   "survey_id": "156",
   "identifier": "34942807969",
-  "supplier_number": "24942807969",
-  "current_month": "July 2025",
+  "supplier_number": "34942807969",
+  "current_month": "April 2025",
   "items": {
     "item": [
       {
-        "identifier": "1234567890",
-        "supplier_number": "2211200018",
-        "item_number": "3494280796",
+        "identifier": "3494280796",
+        "item_number": "2211200018",
         "item_specification_1": "PRODUCT: HEAT EXCHANGER AIR-AIR",
         "item_specification_2": "DESCRIPTION: REFRIGERATION AND FREEZING",
         "item_specification_3": "EQUIPMENT AND HEAT PUMPS: EXCEPT",
@@ -19,7 +18,7 @@
         "terms_of_sale_1": "SUPPLIER REF: 123073",
         "terms_of_sale_2": "PAYMENT: 60 DAYS NET",
         "terms_of_sale_3": "CARRIAGE: FCA",
-        "terms_of_sale_4": "",
+        "terms_of_sale_4": "CARRIAGE: FCA",
         "currency": "POUND STERLING",
         "country_of_origin": "FRANCE"
       }
