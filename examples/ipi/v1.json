@@ -21,6 +21,22 @@
         "terms_of_sale_4": "CARRIAGE: FCA",
         "currency": "POUND STERLING",
         "country_of_origin": "FRANCE"
+      },
+      {
+        "identifier": "1234567890",
+        "item_number": "0987654321",
+        "item_specification_1": "PRODUCT: HEAT EXCHANGER COOL-COOL",
+        "item_specification_2": "DESCRIPTION: INDUSTRIAL REFRIGERATION UNIT",
+        "item_specification_3": "EQUIPMENT AND HEAT PUMPS: COMMERCIAL USE",
+        "item_specification_4": "OUTDOOR TYPE EQUIPMENT",
+        "item_specification_5": "SERIAL NO: 9595D100-002",
+        "unit_of_sale": "EACH",
+        "terms_of_sale_1": "SUPPLIER REF: 456789",
+        "terms_of_sale_2": "PAYMENT: 30 DAYS NET",
+        "terms_of_sale_3": "CARRIAGE: DAP",
+        "terms_of_sale_4": "CARRIAGE: DAP",
+        "currency": "EURO",
+        "country_of_origin": "GERMANY"
       }
     ]
   }
