@@ -167,6 +167,7 @@
     "identifier",
     "survey_id",
     "supplier_number",
-    "current_month"
+    "current_month",
+    "items"
   ]
 }
