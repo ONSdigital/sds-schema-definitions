@@ -1,6 +1,6 @@
-# Prodcom Survey SDS Schema
+# IPI Survey SDS Schema
 
-This document describes the schema for the ipi survey.
+This document describes the schema for the IPI survey.
 
 ## Schema
 
