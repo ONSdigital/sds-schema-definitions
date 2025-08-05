@@ -16,7 +16,7 @@
     },
     "identifier": {
       "type": "string",
-      "description": "The unique top-level identifier. For business surveys this is the reporting unit reference without the check letter appended. If the first digit of a RU number is a 4 the REF is changed to a 0 and if the first digit of the RU is a 5 the REF is changed to a 1. Keep leading zeros",
+      "description": "The unique top-level identifier. For business surveys this is the reporting unit reference without the check letter appended. If the first digit of an RU number is a 4 the REF is changed to a 0 and if the first digit of the RU is a 5 the REF is changed to a 1. Keep leading zeros.",
       "minLength": 11,
       "maxLength": 11,
       "pattern": "^[a-zA-Z0-9]+$",
@@ -24,11 +24,11 @@
     },
     "supplier_number": {
       "type": "string",
-      "description": "Like ruref, this is also a unique top-level identifier for the business. Same as RUREF. Supplier numbers are changed to start with 0 and 1 for EPI",
+      "description": "Like ruref, this is also a unique top-level identifier for the business. If the first digit of a supplier number is 4 then it's changed to 0 and if the first digit is 5 then it's changed to 1. Keep leading zeros.",
       "minLength": 11,
       "maxLength": 11,
       "pattern": "^[a-zA-Z0-9]+$",
-      "examples": ["34942807969"]
+      "examples": ["49422807969"]
     },
     "current_month": {
       "type": "string",
@@ -55,7 +55,7 @@
             "properties": {
               "identifier": {
                 "type": "string",
-                "description": "The 10 digit unique reference for each item produced by the business. This number is allocated by the ONS, if the item was to change the number would stay the same",
+                "description": "The 10 digit unique reference for each item produced by the business. This number is allocated by the ONS, if the item was to change the number would stay the same.",
                 "minLength": 10,
                 "maxLength": 10,
                 "examples": ["2211200018"]
