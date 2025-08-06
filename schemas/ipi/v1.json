@@ -39,6 +39,7 @@
     },
     "items": {
       "type": "object",
+      "description": "An object of items provided",
       "propertyNames": {
         "pattern": "^[a-z0-9][a-z0-9\\-]*[a-z0-9]$",
         "description": "Names for repeating items must be lower case, start with a letter or number, end with a letter or number, and contain only letters, numbers, or hyphens. This field can be shown in eQ URLs therefore no other characters are allowed."
@@ -46,6 +47,7 @@
       "properties": {
         "item": {
           "type": "array",
+          "description": "The data about each item",
           "minItems": 1,
           "uniqueItems": true,
           "items": {
