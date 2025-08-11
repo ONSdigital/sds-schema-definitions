@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1.json",
+  "title": "EPI Survey SDS Schema",
+  "description": "Schema for the EPI survey.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "v1",
+      "description": "Version of the schema spec"
+    },
+    "survey_id": {
+      "type": "string",
+      "description": "The identifier for a particular survey",
+      "enum": ["133"]
+    },
+    "identifier": {
+      "type": "string",
+      "description": "The unique top-level identifier. For business surveys this is the reporting unit reference without the check letter appended. If the first digit of an RU number is a 4 the REF is changed to a 0 and if the first digit of the RU is a 5 the REF is changed to a 1. Keep leading zeros.",
+      "minLength": 11,
+      "maxLength": 11,
+      "pattern": "^[a-zA-Z0-9]+$",
+      "examples": ["34942807969"]
+    },
+    "supplier_number": {
+      "type": "string",
+      "description": "Like ruref, this is also a unique top-level identifier for the business. If the first digit of a supplier number is 4 then it's changed to 0 and if the first digit is 5 then it's changed to 1. Keep leading zeros.",
+      "minLength": 11,
+      "maxLength": 11,
+      "pattern": "^[a-zA-Z0-9]+$",
+      "examples": ["49422807969"]
+    },
+    "current_month": {
+      "type": "string",
+      "description": "The current month and year that the data is required for.",
+      "minLength": 8,
+      "maxLength": 14,
+      "pattern": "^[A-Za-z]+ [0-9]{4}$",
+      "examples": ["April 2025"]
+    },
+    "items": {
+      "type": "object",
+      "description": "An object of items provided",
+      "propertyNames": {
+        "pattern": "^[a-z0-9][a-z0-9\\-]*[a-z0-9]$"
+      },
+      "properties": {
+        "item": {
+          "type": "array",
+          "description": "The data about each item",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "identifier": {
+                "type": "string",
+                "description": "The 10 digit unique reference for each item produced by the business. This number is allocated by the ONS, if the item was to change the number would stay the same.",
+                "minLength": 10,
+                "maxLength": 10,
+                "examples": ["2211200018"]
+              },
+              "item_number": {
+                "type": "string",
+                "description": "The 10 digit reference for each item produced by the business.",
+                "minLength": 10,
+                "maxLength": 10,
+                "examples": ["2211200018"]
+              },
+              "item_specification_1": {
+                "type": "string",
+                "description": "A separate field of the specification for the item produced by the business, the contents and order of this field can change dependent on the number of character.",
+                "minLength": 1,
+                "maxLength": 40,
+                "examples": ["PRODUCT: HEAT EXCHANGER AIR-AIR"]
+              },
+              "item_specification_2": {
+                "type": "string",
+                "description": "A separate field of the specification for the item produced by the business, the contents and order of this field can change dependent on the number of character.",
+                "minLength": 0,
+                "maxLength": 40,
+                "examples": ["DESCRIPTION: REFRIGERATION AND FREEZING"]
+              },
+              "item_specification_3": {
+                "type": "string",
+                "description": "A separate field of the specification for the item produced by the business, the contents and order of this field can change dependent on the number of character.",
+                "minLength": 0,
+                "maxLength": 40,
+                "examples": ["EQUIPMENT AND HEAT PUMPS, EXCEPT"]
+              },
+              "item_specification_4": {
+                "type": "string",
+                "description": "A separate field of the specification for the item produced by the business, the contents and order of this field can change dependent on the number of character.",
+                "minLength": 0,
+                "maxLength": 40,
+                "examples": ["EQUIPMENT AND HEAT PUMPS, EXCEPT"]
+              },
+              "item_specification_5": {
+                "type": "string",
+                "description": "A separate field of the specification for the item produced by the business, the contents and order of this field can change dependent on the number of character.",
+                "minLength": 0,
+                "maxLength": 40,
+                "examples": ["EQUIPMENT AND HEAT PUMPS, EXCEPT"]
+              },
+              "unit_of_sale": {
+                "type": "string",
+                "description": "The unit of sale for the item produced by the business.",
+                "minLength": 1,
+                "maxLength": 40,
+                "examples": ["EACH"]
+              },
+              "terms_of_sale_1": {
+                "type": "string",
+                "description": "A separate field of the terms of sale for the item produced by the business, the contents and order of this field can change dependent on the number of characters.",
+                "minLength": 1,
+                "maxLength": 40,
+                "examples": ["SUPPLIER REF: 123073"]
+              },
+              "terms_of_sale_2": {
+                "type": "string",
+                "description": "A separate field of the terms of sale for the item produced by the business, the contents and order of this field can change dependent on the number of characters.",
+                "minLength": 0,
+                "maxLength": 40,
+                "examples": ["PAYMENT: 60 DAYS NET"]
+              },
+              "terms_of_sale_3": {
+                "type": "string",
+                "description": "A separate field of the terms of sale for the item produced by the business, the contents and order of this field can change dependent on the number of characters.",
+                "minLength": 0,
+                "maxLength": 40,
+                "examples": ["CARRIAGE: FCA"]
+              },
+              "terms_of_sale_4": {
+                "type": "string",
+                "description": "A separate field of the terms of sale for the item produced by the business, the contents and order of this field can change dependent on the number of characters.",
+                "minLength": 0,
+                "maxLength": 40,
+                "examples": ["CARRIAGE: FCA"]
+              },
+              "currency": {
+                "type": "string",
+                "description": "The currency which the product price is recorded.",
+                "minLength": 1,
+                "maxLength": 25,
+                "examples": ["POUNDS STERLING"]
+              },
+              "country_of_origin": {
+                "type": "string",
+                "description": "The country of origin for the item.",
+                "minLength": 1,
+                "maxLength": 25,
+                "examples": ["FRANCE"]
+              }
+            },
+            "required": [
+              "identifier",
+              "item_number",
+              "item_specification_1",
+              "unit_of_sale",
+              "terms_of_sale_1",
+              "currency",
+              "country_of_origin"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["item"],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "survey_id",
+    "identifier",
+    "supplier_number",
+    "current_month",
+    "items"
+  ],
+  "additionalProperties": false
+}

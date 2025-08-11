@@ -43,6 +43,7 @@ const schemaDefinitionJsonToExamples = {
   "schemas/ppi/v2.json": "examples/ppi/v2.json",
   "schemas/ppi/v3.json": "examples/ppi/v3.json",
   "schemas/sppi/v1.json": "examples/sppi/v1.json",
+  "schemas/epi/v1.json": "examples/epi/v1.json",
   "schemas/ipi/v1.json": "examples/ipi/v1.json",
 };
 
