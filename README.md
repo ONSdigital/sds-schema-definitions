@@ -41,6 +41,7 @@ Documentation can be found in [docs/](./docs).
 - [Prodcom README](docs/prodcom.md)
 - [Roofing Tiles + Slate README](docs/roofing_tiles_slate)
 - [Sand and Gravel README](docs/sand_and_gravel)
+- [ASHE README](docs/ashe.md)
 - [BRES README](docs/bres.md)
 - [BRS README](docs/brs.md)
 - [PPI README](docs/ppi.md)
