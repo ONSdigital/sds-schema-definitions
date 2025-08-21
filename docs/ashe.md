@@ -17,3 +17,7 @@ v2 Template: [template_v2.json](/schemas/template_v2.json)
 | `work_id`                                  | The work number, branch and department. This field will appear blank if missing. | No |
 | `work_postcode`                            | The employees work postcode. If missing (XX9 9XX) 'NOT KNOWN' will be displayed. | No |
 | `home_postcode`                            | The employees work postcode. If missing (XX9 9XX) 'NOT KNOWN' will be displayed. | No |
+
+## Examples
+
+Examples can be found at [examples/ashe](../examples/ashe).
