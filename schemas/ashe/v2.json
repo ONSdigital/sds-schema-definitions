@@ -45,7 +45,7 @@
       "pattern": "^(?:\\*{7}14|\\*{9})$",
       "examples": ["*******14", "*********"]
     },
-    "work_id":{
+    "work_id": {
       "type": "string",
       "description": "The work number, branch and department. This field will appear blank if missing",
       "minLength": 0,
@@ -61,7 +61,7 @@
       "pattern": "^[a-zA-Z0-9 ]{5,9}$",
       "examples": ["BR3 1HD", "NOT KNOWN"]
     },
-    "home_postcode":{
+    "home_postcode": {
       "type": "string",
       "description": "The employee work postcode of the employee",
       "minLength": 5,
