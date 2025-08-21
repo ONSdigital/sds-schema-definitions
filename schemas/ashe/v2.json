@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v2.json",
+  "title": "SDS schema for the ASHE survey",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "v2",
+      "description": "Version of the schema spec"
+    },
+    "survey_id": {
+      "type": "string",
+      "description": "The identifier for a particular survey",
+      "enum": ["141"]
+    },
+    "identifier": {
+      "type": "string",
+      "description": "The unique top-level identifier. This is the reporting unit reference without the check letter appended.",
+      "minLength": 11,
+      "maxLength": 11,
+      "pattern": "^[a-zA-Z0-9]+$",
+      "examples": ["34942807969"]
+    },
+    "serial_number": {
+      "type": "string",
+      "description": "Unique persona level identifier that ONS produce",
+      "minLength": 11,
+      "maxLength": 7,
+      "pattern": "^[a-zA-Z0-9]+$",
+      "examples": ["1308038"]
+    },
+    "employee_name": {
+      "type": "string",
+      "description": "The employee name",
+      "minLength": 1,
+      "maxLength": 40,
+      "pattern": "^[a-zA-Z ,.'-]+$",
+      "examples": ["MR D A MCINTOSH"]
+    },
+    "national_insurance_number_starred": {
+      "type": "string",
+      "description": "The national insurance number of the employee, hidden by stars and only '14' revealed or 9 stars if its temporary or blank national insurance number.",
+      "minLength": 9,
+      "maxLength": 9,
+      "pattern": "^(?:\\*{7}14|\\*{9})$",
+      "examples": ["*******14", "*********"]
+    },
+    "work_id":{
+      "type": "string",
+      "description": "The work number, branch and department. This field will appear blank if missing",
+      "minLength": 0,
+      "maxLength": 20,
+      "pattern": "^[a-zA-Z0-9]+$",
+      "examples": ["7009773BKCVWXM"]
+    },
+    "work_postcode": {
+      "type": "string",
+      "description": "The employees work postcode",
+      "minLength": 5,
+      "maxLength": 9,
+      "pattern": "^[a-zA-Z0-9 ]{5,9}$",
+      "examples": ["BR3 1HD", "NOT KNOWN"]
+    },
+    "home_postcode":{
+      "type": "string",
+      "description": "The employee work postcode of the employee",
+      "minLength": 5,
+      "maxLength": 9,
+      "pattern": "^[a-zA-Z0-9 ]{5,9}$",
+      "examples": ["BR3 1HD"]
+    }
+  },
+  "additionalProperties": false,
+  "required": ["schema_version", "identifier", "survey_id"]
+}

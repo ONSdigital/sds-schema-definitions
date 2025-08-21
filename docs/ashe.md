@@ -13,7 +13,7 @@ v2 Template: [template_v2.json](/schemas/template_v2.json)
 | `identifier`                               | The unique top-level identifier. This is a string representing the reporting unit reference.                   | Yes |
 | `serial_number`                            | Unique person level identifier that ONS produce. | Yes |
 | `employee_name`                            | The employee name. | Yes|
-| `national_insurance_number_starred`        | The national insurance number of the employee, hidden by stars and only '14' revealed or 9 stars if its temporary or blank national number. | Yes |
+| `national_insurance_number_starred`        | The national insurance number of the employee, hidden by stars and only '14' revealed or 9 stars if its temporary or blank national insurance number. | Yes |
 | `work_id`                                  | The work number, branch and department. This field will appear blank if missing. | No |
 | `work_postcode`                            | The employees work postcode. If missing (XX9 9XX) 'NOT KNOWN' will be displayed. | No |
 | `home_postcode`                            | The employees work postcode. If missing (XX9 9XX) 'NOT KNOWN' will be displayed. | No |
