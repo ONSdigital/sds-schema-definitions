@@ -45,7 +45,7 @@ const schemaDefinitionJsonToExamples = {
   "schemas/sppi/v1.json": "examples/sppi/v1.json",
   "schemas/epi/v1.json": "examples/epi/v1.json",
   "schemas/ipi/v1.json": "examples/ipi/v1.json",
-  "schemas/ashe/v2.json": "examples/ashe/v2.json",
+  "schemas/ashe/v1.json": "examples/ashe/v1.json",
 };
 
 // Recursive function for validating examples against their respective schemas

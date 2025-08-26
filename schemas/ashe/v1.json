@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "v2.json",
+  "$id": "v1.json",
   "title": "SDS schema for the ASHE survey",
   "type": "object",
   "properties": {
