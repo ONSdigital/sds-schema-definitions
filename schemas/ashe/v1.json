@@ -41,7 +41,7 @@
             "properties": {
               "identifier": {
                 "type": "string",
-                "description": "The unique person level identifier that the ONS produce",
+                "description": "The unique person level identifier that the ONS produces",
                 "minLength": 1,
                 "maxLength": 7,
                 "examples": ["1308038"]
