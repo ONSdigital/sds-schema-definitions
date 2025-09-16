@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v1.json",
+  "title": "SDS schema for the ASHE survey",
+  "description": "Schema for the ASHE survey.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "v1",
+      "description": "Version of the schema spec"
+    },
+    "survey_id": {
+      "type": "string",
+      "description": "The identifier for a particular survey",
+      "enum": ["141"]
+    },
+    "identifier": {
+      "type": "string",
+      "description": "ASHE_RU to be used which mimics a RUREF. Format is surveyID (141), zeros, followed by an incrementing count. Must count to 11 digits.",
+      "minLength": 11,
+      "maxLength": 11,
+      "pattern": "^[a-zA-Z0-9]+$",
+      "examples": ["14100007160"]
+    },
+    "items": {
+      "type": "object",
+      "description": "An object of items provided",
+      "propertyNames": {
+        "pattern": "^[a-z0-9][a-z0-9\\-]*[a-z0-9]$",
+        "description": "Names for repeating items must be lower case, start with a letter or number, end with a letter or number, and contain only letters, numbers, or hyphens. This field can be shown in eQ URLs therefore no other characters are allowed."
+      },
+      "properties": {
+        "employee": {
+          "type": "array",
+          "description": "The data about each item",
+          "minItems": 1,
+          "maxItems": 15,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "identifier": {
+                "type": "string",
+                "description": "The unique person level identifier that the ONS produce",
+                "minLength": 1,
+                "maxLength": 7,
+                "examples": ["1308038"]
+              },
+              "employee_name": {
+                "type": "string",
+                "description": "The employee name",
+                "minLength": 1,
+                "maxLength": 40,
+                "examples": ["MR D A MCINTOSH"]
+              },
+              "national_insurance_number_starred": {
+                "type": "string",
+                "description": "The national insurance number of the employee, hidden by stars and only '14' revealed or 9 stars if its a temporary or blank national insurance number",
+                "minLength": 9,
+                "maxLength": 9,
+                "examples": ["******14*"]
+              },
+              "work_id": {
+                "type": "string",
+                "description": "The work number, branch and department. This field will appear blank if missing.",
+                "minLength": 0,
+                "maxLength": 20,
+                "examples": ["7009773BKCVWXM"]
+              },
+              "work_postcode": {
+                "type": "string",
+                "description": "The employees work postcode. If missing (XX9 9XX), 'NOT KNOWN' will be displayed.",
+                "minLength": 5,
+                "maxLength": 9,
+                "examples": ["BR3 1HD"]
+              },
+              "home_postcode": {
+                "type": "string",
+                "description": "The employees home postcode. If missing (XX9 9XX), 'NOT KNOWN' will be displayed.",
+                "minLength": 5,
+                "maxLength": 9,
+                "examples": ["CH64 4EQ"]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "identifier",
+              "employee_name",
+              "national_insurance_number_starred"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": ["employee"]
+    }
+  },
+  "additionalProperties": false,
+  "required": ["schema_version", "identifier", "survey_id", "items"]
+}
