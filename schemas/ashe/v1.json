@@ -41,10 +41,10 @@
             "properties": {
               "identifier": {
                 "type": "string",
-                "description": "The unique person level identifier that the ONS produces",
-                "minLength": 1,
-                "maxLength": 7,
-                "examples": ["1308038"]
+                "description": "The unique person level identifier that the ONS produces (up to 7 chars) and check letter associated with the serial number",
+                "minLength": 2,
+                "maxLength": 8,
+                "examples": ["1308038K"]
               },
               "employee_name": {
                 "type": "string",
